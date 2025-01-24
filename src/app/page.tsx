@@ -6,7 +6,8 @@ interface CustomIntlMessages extends AbstractIntlMessages {
   TabTitles?: {
     home?: string;
   };
-};
+  [key: string]: any;
+}
 
 export async function generateMetadata({
   params: { locale },
