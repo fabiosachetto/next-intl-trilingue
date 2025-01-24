@@ -1,6 +1,6 @@
 
 import Navbar from "@/app/components/Navbar";
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   title: "Criando Next App",
-// };
+export const metadata: Metadata = {
+  title: "Seu Roteiro em Paraty",
+};
 
 export default async function RootLayout({
   children,

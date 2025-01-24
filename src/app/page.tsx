@@ -1,25 +1,19 @@
-import { AbstractIntlMessages, useTranslations } from "next-intl";
-import { getMessages } from "next-intl/server";
+// import { AbstractIntlMessages, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+// import { getMessages } from "next-intl/server";
 import Image from "next/image";
 
-interface CustomIntlMessages extends AbstractIntlMessages {
-  TabTitles?: {
-    home?: string;
-  };
-  [key: string]: any;
-}
-
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  const messages: CustomIntlMessages = await getMessages({ locale });
-  const title = messages.TabTitles?.home;
-  return {
-    title,
-  };
-};
+// export async function generateMetadata({
+//   params: { locale },
+// }: {
+//   params: { locale: string };
+// }) {
+//   const messages: AbstractIntlMessages = await getMessages({ locale });
+//   const title = (messages).TabTitles?.inicial;
+//   return {
+//     title,
+//   };
+// }
 
 export default function Home() {
   const t = useTranslations("HomePage");
