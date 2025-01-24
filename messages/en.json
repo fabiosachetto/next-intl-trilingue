@@ -1,0 +1,10 @@
+{
+  "TabTitles": {
+    "home": "Creating Next App"
+  },
+  "HomePage": {
+    "description": "Example of trilingual functionality, using NEXT-INTL.",
+    "listOne": "Start by editing pages/index.js and save to reload.",
+    "listTwo": "Learn more about Next.js in the documentation."
+  }
+}
